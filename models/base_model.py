@@ -2,12 +2,13 @@
 """
     Module containing BaseModel
 """
-from uuid import uuid4
+
 from datetime import datetime
-import models
+from os import environ
 from sqlalchemy import Column, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
-from os import environ
+from uuid import uuid4
+import models
 
 storage_engine = environ.get("HBNB_TYPE_STORAGE")
 
