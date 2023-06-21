@@ -8,7 +8,6 @@ from os import environ
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String
 
-
 storage_engine = environ.get("HBNB_TYPE_STORAGE")
 
 
