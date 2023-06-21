@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Module containing BaseModel
+BaseModel Module
 """
 
 from datetime import datetime
