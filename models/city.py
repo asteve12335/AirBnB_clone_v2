@@ -5,9 +5,9 @@ City module
 
 from models.base_model import BaseModel, Base
 from models.state import State
+from os import environ
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String, ForeignKey
-from os import environ
 
 storage_engine = environ.get("HBNB_TYPE_STORAGE")
 
