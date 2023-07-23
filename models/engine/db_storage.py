@@ -91,3 +91,10 @@ class DBStorage:
         """
         self.__session.__class__.close(self.__session)
         self.reload()
+
+    def close(self):
+        """
+        display our HBNB data
+        """
+        self.__session.__class__.close(self.__session)
+        self.reload()
