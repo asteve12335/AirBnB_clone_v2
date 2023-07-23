@@ -57,3 +57,7 @@ class FileStorage:
         """
         if (obj):
             self.__objects.pop("{}.{}".format(type(obj).__name__, obj.id))
+
+    def close(self):
+        """display our HBNB data"""
+        self.reload()
