@@ -27,6 +27,6 @@ class State(BaseModel, Base):
             """
             result = []
             for k, v in models.storage.all(models.city.City).items():
-                if (k.state_id == self.id):
+                if (v.state_id == self.id):
                     result.append(k)
             return result
